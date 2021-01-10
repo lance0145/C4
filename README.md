@@ -1,47 +1,47 @@
-<img src="https://raw.githubusercontent.com/malwaredllc/byob/master/byob/static/byob_logo_email-black.png" width="400px"></img>
+<img src="https://raw.githubusercontent.com/malwaredllc/C4/master/C4/static/C4_logo_email-black.png" width="400px"></img>
 
-[![license](https://img.shields.io/badge/license-GPL-brightgreen.svg)](https://github.com/malwaredllc/byob/blob/master/LICENSE)
-[![version](https://img.shields.io/badge/version-1.0-lightgrey.svg)](https://github.com/malwaredllc/byob)
-[![build](https://img.shields.io/travis/com/malwaredllc/byob/master.svg)](https://travis-ci.com/malwaredllc/byob.svg?branch=master)
-[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=BYOB%20(Build%20Your%20Own%20Botnet)&url=https://github.com/malwaredllc/byob&via=malwaredllc&hashtags=botnet,python,infosec,github)
+[![license](https://img.shields.io/badge/license-GPL-brightgreen.svg)](https://github.com/malwaredllc/C4/blob/master/LICENSE)
+[![version](https://img.shields.io/badge/version-1.0-lightgrey.svg)](https://github.com/malwaredllc/C4)
+[![build](https://img.shields.io/travis/com/malwaredllc/C4/master.svg)](https://travis-ci.com/malwaredllc/C4.svg?branch=master)
+[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=C4%20(Build%20Your%20Own%20Botnet)&url=https://github.com/malwaredllc/C4&via=malwaredllc&hashtags=botnet,python,infosec,github)
 
 Questions? [Join the Discord support server](https://discord.gg/8FsSrw7)
 
 __Disclaimer__: This project should be used for authorized testing or educational purposes only.
 
-BYOB is an open-source post-exploitation framework for students, researchers and developers. It includes features such as:
+C4 is an open-source cyber-security framework for students, researchers and developers. It includes features such as:
 - Pre-built C2 server
 - Custom payload generator
-- 12 post-exploitation modules
+- 12 cyber-security modules
 
 It is designed to allow students and developers to easily implement their own code and add cool new
 features *without* having to write a C2 server or Remote Administration Tool from scratch.
 
-This project has 2 main parts: the **original console-based application** (`/byob`) and the **web GUI** (`/web-gui`).
+This project has 2 main parts: the **original console-based application** (`/C4`) and the **web GUI** (`/web-gui`).
 
 # Web GUI
 
 ## Dashboard
-A control panel for your C2 server with a point-and-click interface for executing post-exploitation modules. The control panel includes an interactive map of client machines and a dashboard which allows efficient, intuitive administration of client machines.
+A control panel for your C2 server with a point-and-click interface for executing cyber-security modules. The control panel includes an interactive map of client machines and a dashboard which allows efficient, intuitive administration of client machines.
 
-![dashboard_preview](https://github.com/malwaredllc/byob/blob/master/web-gui/buildyourownbotnet/assets/images/previews/preview-dashboard.png)
+![dashboard_preview](https://github.com/malwaredllc/C4/blob/master/web-gui/buildyourownbotnet/assets/images/previews/preview-dashboard.png)
 
 ## Payload Generator
 The payload generator uses black magic involving Docker containers & Wine servers to compile executable payloads for any platform/architecture you select. These payloads spawn reverse TCP shells with communication over the network encrypted via AES-256 after generating a secure symmetric key using the [Diffie-Hellman IKE](https://tools.ietf.org/html/rfc2409).
 
-![payloads_preview](https://github.com/malwaredllc/byob/blob/master/web-gui/buildyourownbotnet/assets/images/previews/preview-payloads2.png)
+![payloads_preview](https://github.com/malwaredllc/C4/blob/master/web-gui/buildyourownbotnet/assets/images/previews/preview-payloads2.png)
 
 ## Terminal Emulator
 The web app includes an in-browser terminal emulator so you can still have direct shell access even when using the web GUI.
 
-![terminal_preview](https://github.com/malwaredllc/byob/blob/master/web-gui/buildyourownbotnet/assets/images/previews/preview-shell.png)
+![terminal_preview](https://github.com/malwaredllc/C4/blob/master/web-gui/buildyourownbotnet/assets/images/previews/preview-shell.png)
 
 # Console Application
 
 ## Client
-[![client](https://img.shields.io/badge/byob-client-blue.svg)](https://github.com/malwaredllc/byob/blob/master/byob/payloads.py)
+[![client](https://img.shields.io/badge/C4-client-blue.svg)](https://github.com/malwaredllc/C4/blob/master/C4/payloads.py)
 
-*Generate fully-undetectable clients with staged payloads, remote imports, and unlimited post-exploitation modules*
+*Generate fully-undetectable clients with staged payloads, remote imports, and unlimited cyber-security modules*
 
 1) __Remote Imports__: remotely import third-party packages from the server without writing them 
 to the disk or downloading/installing them
@@ -53,10 +53,10 @@ process
 packages/modules from the server, and can be compiled with a standalone python 
 interpreter into a portable binary executable formatted for any platform/architecture,
 allowing it to run on anything, even when Python itself is missing on the target host
-4) __Add New Features With Just 1 Click__: any python script, module, or package you copy to the `./byob/modules/` directory
+4) __Add New Features With Just 1 Click__: any python script, module, or package you copy to the `./C4/modules/` directory
 automatically becomes remotely importable & directly usable by every client while 
 your command & control server is running
-5) __Write Your Own Modules__: a basic module template is provided in `./byob/modules/` directory to make writing
+5) __Write Your Own Modules__: a basic module template is provided in `./C4/modules/` directory to make writing
 your own modules a straight-forward, hassle-free process
 6) __Run Unlimited Modules Without Bloating File Size__: use remote imports to add unlimited features without adding a single byte to the
 client's file size 
@@ -76,24 +76,24 @@ in the payload stager which is generated along with it
 12) __Prevent Reverse-Engineering__: by default, clients will abort execution if a virtual machine or sandbox is detected
 
 ## Modules
-[![modules](https://img.shields.io/badge/byob-modules-blue.svg)](https://github.com/malwaredllc/byob/blob/master/byob/modules)
+[![modules](https://img.shields.io/badge/C4-modules-blue.svg)](https://github.com/malwaredllc/C4/blob/master/C4/modules)
 
-*Post-exploitation modules that are remotely importable by clients*
+*cyber-security modules that are remotely importable by clients*
 
-1) __Persistence__ (`byob.modules.persistence`): establish persistence on the host machine using 5 different methods
-2) __Packet Sniffer__ (`byob.modules.packetsniffer`): run a packet sniffer on the host network & upload .pcap file
-3) __Escalate Privileges__ (`byob.modules.escalate`): attempt UAC bypass to gain unauthorized administrator privileges
-4) __Port Scanner__ (`byob.modules.portscanner`): scan the local network for other online devices & open ports
-5) __Keylogger__ (`byob.modules.keylogger`): logs the user’s keystrokes & the window name entered
-6) __Screenshot__ (`byob.modules.screenshot`): take a screenshot of current user’s desktop
-7) __Webcam__ (`byob.modules.webcam`): view a live stream or capture image/video from the webcam
-8) __Outlook__ (`byob.modules.outlook`): read/search/upload emails from the local Outlook client
-9) __Process Control__ (`byob.modules.process`): list/search/kill/monitor currently running processes on the host
-10) __iCloud__ (`byob.modules.icloud`): check for logged in iCloud account on macOS
-11) __Miner__ (`byob.core.miner`): mine Monero in the background using the built-in miner or XMRig
+1) __Persistence__ (`C4.modules.persistence`): establish persistence on the host machine using 5 different methods
+2) __Packet Sniffer__ (`C4.modules.packetsniffer`): run a packet sniffer on the host network & upload .pcap file
+3) __Escalate Privileges__ (`C4.modules.escalate`): attempt UAC bypass to gain unauthorized administrator privileges
+4) __Port Scanner__ (`C4.modules.portscanner`): scan the local network for other online devices & open ports
+5) __Keylogger__ (`C4.modules.keylogger`): logs the user’s keystrokes & the window name entered
+6) __Screenshot__ (`C4.modules.screenshot`): take a screenshot of current user’s desktop
+7) __Webcam__ (`C4.modules.webcam`): view a live stream or capture image/video from the webcam
+8) __Outlook__ (`C4.modules.outlook`): read/search/upload emails from the local Outlook client
+9) __Process Control__ (`C4.modules.process`): list/search/kill/monitor currently running processes on the host
+10) __iCloud__ (`C4.modules.icloud`): check for logged in iCloud account on macOS
+11) __Miner__ (`C4.core.miner`): mine Monero in the background using the built-in miner or XMRig
 
 ## Server
-[![server](https://img.shields.io/badge/byob-server-blue.svg)](https://github.com/malwaredllc/byob/blob/master/byob/server.py)
+[![server](https://img.shields.io/badge/C4-server-blue.svg)](https://github.com/malwaredllc/C4/blob/master/C4/server.py)
 
 *Command & control server with persistent database and console*
 
@@ -107,18 +107,18 @@ to remotely import without writing them to the disk of the target machines, allo
 packages not installed on the target machines
 
 ## Core
-[![core](https://img.shields.io/badge/byob-core-blue.svg)](https://github.com/malwaredllc/byob/blob/master/byob/core)
+[![core](https://img.shields.io/badge/C4-core-blue.svg)](https://github.com/malwaredllc/C4/blob/master/C4/core)
 
 *Core framework modules used by the generator and the server*
 
-1) __Utilities__ (`byob.core.util`): miscellaneous utility functions that are used by many modules
-2) __Security__ (`byob.core.security`): Diffie-Hellman IKE & 3 encryption modes (AES-256-OCB, AES-256-CBC, XOR-128)
-3) __Loaders__ (`byob.core.loaders`): remotely import any package/module/scripts from the server
-4) __Payloads__ (`byob.core.payloads`): reverse TCP shell designed to remotely import dependencies, packages & modules
-5) __Stagers__ (`byob.core.stagers`): generate unique payload stagers to prevent analysis & detection   
-6) __Generators__ (`byob.core.generators`): functions which all dynamically generate code for the client generator
-7) __Database__ (`byob.core.database`): handles interaction between command & control server and the SQLite database
-8) __Handler__ (`byob.core.handler`): HTTP POST request handler for remote file uploads to the server
+1) __Utilities__ (`C4.core.util`): miscellaneous utility functions that are used by many modules
+2) __Security__ (`C4.core.security`): Diffie-Hellman IKE & 3 encryption modes (AES-256-OCB, AES-256-CBC, XOR-128)
+3) __Loaders__ (`C4.core.loaders`): remotely import any package/module/scripts from the server
+4) __Payloads__ (`C4.core.payloads`): reverse TCP shell designed to remotely import dependencies, packages & modules
+5) __Stagers__ (`C4.core.stagers`): generate unique payload stagers to prevent analysis & detection   
+6) __Generators__ (`C4.core.generators`): functions which all dynamically generate code for the client generator
+7) __Database__ (`C4.core.database`): handles interaction between command & control server and the SQLite database
+8) __Handler__ (`C4.core.handler`): HTTP POST request handler for remote file uploads to the server
 
 ________________________________________________________________________________________________
 

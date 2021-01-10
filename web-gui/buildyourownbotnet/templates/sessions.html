@@ -31,7 +31,7 @@
 
 						<div class="panel panel-dark">
 							<div class="panel-heading">
-								<div class="panel-title" id="bulk-actions">Post-Exploitation Modules</div>
+								<div class="panel-title" id="bulk-actions">Cyber-Security Modules</div>
 							</div>
 
 							<div class="panel-body">
@@ -178,10 +178,10 @@
 									</div>
 
 									<div class="col-sm-4">
-										<!-- Select All Bots -->
+										<!-- Select All Modules -->
 										<div class="radio radio-replace" style=" padding: 5px;">
 											<input type="radio" id="select-all" name="radio2" onclick="selectAll()">
-											<label>Select All Bots</label>
+											<label>Select All Modules</label>
 										</div>
 									</div>
 								</div>
@@ -252,7 +252,7 @@
 									// remove session row from table
 									$('#session-row-' + element.getAttribute('name')).remove();
 
-									// decrement bots count
+									// decrement Modules count
 									var nbots = $('#nbots').text();
 									nbots = parseInt(nbots) - 1;
 									$('#nbots').text(nbots);
@@ -514,21 +514,6 @@
 						</div>
 					</div>
 				{% endfor %}
-		</div>
-
-		<br/>
-		<hr/>
-		<br/>
-
-		<div class="row" align="center">
-			<!-- Discord server -->
-				<h2 style="color: white; font-family: titillium">Need help?</h2>
-				<br/>
-				<div class="join-discord" onclick="openInNewTab('https://discord.com/channels/709150520446550097/709150520929026241');">
-					<img src="/assets/images/discord.png" style="width: 50px; padding-right: 10px"/>
-					<span>Join our Discord server</span>
-				</div>
-
 		</div>
 	</div>
 
@@ -938,7 +923,7 @@
 		});
 
 		$(document).ready(function(){
-			$('#sessions-table_length').after(`<caption id="sessions-title" align="center" style="position: absolute; float: center; left: 45%; transform: translateY(-18%);"><h3 class="titillium">Bots: <span class="titillium" id="nbots">{{n}}</span></h3></caption>`);
+			$('#sessions-table_length').after(`<caption id="sessions-title" align="center" style="position: absolute; float: center; left: 45%; transform: translateY(-18%);"><h3 class="titillium">Servers: <span class="titillium" id="nbots">{{n}}</span></h3></caption>`);
 		});
 
 		$(document).ready(function(){

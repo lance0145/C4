@@ -27,7 +27,7 @@ Supports Python 2 & 3.
 *BYOB now includes a powerful web GUI which makes it more accessible to new users. Check out https://buildyourownbotnet.com to see a preview, or follow [this guide](https://github.com/malwaredllc/byob/wiki) to get started! Key features include:*
 
 ## Dashboard
-A control panel for your C2 server with a point-and-click interface for executing post-exploitation modules across your botnet. The dashboard includes a map of your bots across the globe, and hashrate trackers & graphs for those of you mining Monero.
+A control panel for your C2 server with a point-and-click interface for executing cyber-security modules across your botnet. The dashboard includes a map of your bots across the globe, and hashrate trackers & graphs for those of you mining Monero.
 ![dashboard_preview](https://github.com/malwaredllc/byob-app-local/blob/master/buildyourownbotnet/assets/images/previews/preview-dashboard.png)
 
 ## Payload Generator

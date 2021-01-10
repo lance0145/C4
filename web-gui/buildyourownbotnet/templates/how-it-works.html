@@ -75,13 +75,13 @@
 
 			<div class="tocify-content">
 
-			<p>BYOB is intended to be a beginner friendly tool for those interested in learning basic botnet architecture. It is not intended to be a robust solution suitable for real world attackers. Below are details on the architecture and design choices of this project.</p>
+			<p>C4 is intended to be a beginner friendly tool for those interested in learning basic modules architecture. It is not intended to be a robust solution suitable for real world attackers. Below are details on the architecture and design choices of this project.</p>
 
-			<p>This web application uses a version of the original console-based application <a href="https://github.com/malwaredllc/byob">BYOB</a> which has been modified for use with a web-based front-end.</p>
+			<p>This web application uses a version of the original console-based application <a href="https://github.com/malwaredllc/byob">C4</a> which has been modified for use with a web-based front-end.</p>
 
 			<br/>
 
-			<p>BYOB uses "staged" payloads, which work something like this:</p>
+			<p>C4 uses "staged" payloads, which work something like this:</p>
 		
 			<br/>
 			<hr/>
@@ -100,7 +100,7 @@
 
 				<p>This is all to prevent analysis of the code running in memory. Finally if all checks pass, it download another encrypted file containing the main payload code. It decrypts it in memory and runs it.</p>
 
-				<p>Note that these anti-anlysis features are disabled by default in order not to confuse new users trying to run a BYOB payload on a virtual machine.</p>
+				<p>Note that these anti-anlysis features are disabled by default in order not to confuse new users trying to run a C4 payload on a virtual machine.</p>
 
 				<br/>
 				<hr/>
@@ -109,7 +109,7 @@
 
 				<h2 style="font-weight: bold; color: white;">Payload</h2>
 
-				<p>The main payload is the "meat and potatoes" and contains all of the main functionality to control the target machine, remotely import Python packages and post-exploitation modules from the server, and operate as a <a href="https://www.acunetix.com/blog/web-security-zone/what-is-reverse-shell/">reverse TCP shell</a>.</p>
+				<p>The main payload is the "meat and potatoes" and contains all of the main functionality to control the target machine, remotely import Python packages and cyber-security modules from the server, and operate as a <a href="https://www.acunetix.com/blog/web-security-zone/what-is-reverse-shell/">reverse TCP shell</a>.</p>
 
 				<p>Throughout all of this, the only data that exists on the disk is the original tiny dropper file, which contains obfuscated code and also usually is compiled into a binary executable file, which makes reverse-engineering that much more tedious.</p>
 
@@ -143,33 +143,19 @@
 			<br/>
 
 			<h2 style="font-weight: bold; color: white;">Portability</h2>
-				<p>Real botnets generally don't use a scripting language like Python for the payload, which is much easier to reverse-engineer, requires Python be installed on the target machine to run, and many third party packages are required to do anything useful. However, BYOB gets around these problems in 2 ways:</p>
+				<p>Real modules generally don't use a scripting language like Python for the payload, which is much easier to reverse-engineer, requires Python be installed on the target machine to run, and many third party packages are required to do anything useful. However, C4 gets around these problems in 2 ways:</p>
 
 				<br/>
 
 				<h3 style="font-weight: bold; color: white;">Executables</h3>
-				<p>By selecting the "executable" format when generating a payload, the Python payload is compiled into a binary executable with an embedded Python interpreter, so it will run on a machine that does not have Python installed. BYOB accomplishes this by running <a href="https://www.docker.com/">Docker</a> containers and <a href="https://www.winehq.org/">Wine</a> servers for different platforms and architectures, and running <a href="https://www.pyinstaller.org">PyInstaller</a> within the appropriate environment based on the platform and architecture selected by the user.</p>
+				<p>By selecting the "executable" format when generating a payload, the Python payload is compiled into a binary executable with an embedded Python interpreter, so it will run on a machine that does not have Python installed. C4 accomplishes this by running <a href="https://www.docker.com/">Docker</a> containers and <a href="https://www.winehq.org/">Wine</a> servers for different platforms and architectures, and running <a href="https://www.pyinstaller.org">PyInstaller</a> within the appropriate environment based on the platform and architecture selected by the user.</p>
 
 				<br/>
 
 				<h3 style="font-weight: bold; color: white;">Remote Imports</h3>
-				<p>The C2 server also runs a simple HTTP server to host the third party Python packages that some of the post-exploitation modules use. If a post-exploitation module attempts to import a third party package that isn't available, it will then remotely import the package from the server over HTTP. This allows the payloads to import third party packages directly the same way as if they were installed on the machine locally.<p>
+				<p>The C4 server also runs a simple HTTP server to host the third party Python packages that some of the cyber-security modules use. If a cyber-security module attempts to import a third party package that isn't available, it will then remotely import the package from the server over HTTP. This allows the payloads to import third party packages directly the same way as if they were installed on the machine locally.<p>
 
 				<p>The 2 features above combine to make the payload quite portable.</p>
-					
-			<br/>
-			<hr/>
-			<br/>
-		</div>
-
-		<div class="row" align="center">
-			<!-- Discord server -->
-				<h2 style="color: white; font-family: titillium">Questions?</h2>
-				<br/>
-				<div class="join-discord" onclick="openInNewTab('https://discord.com/channels/709150520446550097/709150520929026241');">
-					<img src="/assets/images/discord.png" style="width: 50px; padding-right: 10px"/>
-					<span>Join our Discord server</span>
-				</div>
 
 		</div>
 	</div>

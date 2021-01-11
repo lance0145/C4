@@ -23,15 +23,15 @@ Supports Python 2 & 3.
 
 ## Dashboard
 A control panel for your C4 server with a point-and-click interface for executing cyber-security modules across your botnet. The dashboard includes a map of your modules across the globe, and hashrate trackers & graphs for those of your Modules.
-![dashboard_preview](https://github.com/malwaredllc/byob-app-local/blob/master/buildyourownbotnet/assets/images/previews/preview-dashboard.png)
+![dashboard_preview](https://github.com/lance0145/C4/tree/master/web-gui/buildyourownbotnet/assets/images/previews/preview-dashboard.png)
 
 ## Payload Generator
 The payload generator uses tools involving Docker containers & Wine servers to compile executable payloads for any platform/architecture you select.
-![payload_generator_preview](https://github.com/malwaredllc/byob-app-local/blob/master/buildyourownbotnet/assets/images/previews/preview-payloads2.png)
+![payload_generator_preview](https://github.com/lance0145/C4/tree/master/web-gui/buildyourownbotnet/assets/images/previews/preview-payloads2.png)
 
 ## Terminal Emulator
 The web app includes an in-browser terminal emulator so you can still have direct shell access even when using the GUI
-![shell_preview](https://github.com/malwaredllc/C4-app-local/blob/master/buildyourownbotnet/assets/images/previews/preview-shell2.png)
+![shell_preview](https://github.com/lance0145/C4/tree/master/web-gui/buildyourownbotnet/assets/images/previews/preview-shell2.png)
 
 
 ### Donation
@@ -44,5 +44,3 @@ ________________________________________________________________________________
 __Website__: http://34.122.148.245:5000/
 
 __Email__: lance0145@gmail.com
-
-__Twitter__: [![twitter](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/malwaredllc)

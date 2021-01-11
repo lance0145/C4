@@ -6,7 +6,7 @@ Questions? [Join our Discord server](https://discord.com/channels/70915052044655
 __Disclaimer__: This project should be used for authorized testing or educational purposes only.
 
 C4 is an open-source project that provides a framework for security researchers and developers 
-to build and operate a basic botnet to deepen their understanding of the sophisticated malware 
+to build and operate a basic modules to deepen their understanding of the sophisticated malware 
 that infects millions of devices every year and spawns modern botnets, in order to improve their 
 ability to develop counter-measures against these threats. 
 
@@ -22,11 +22,11 @@ Supports Python 2 & 3.
 *C4 now includes a powerful web GUI which makes it more accessible to new users. Check out https://buildyourownbotnet.com to see a preview, or follow [this guide](https://github.com/malwaredllc/byob/wiki) to get started! Key features include:*
 
 ## Dashboard
-A control panel for your C4 server with a point-and-click interface for executing cyber-security modules across your botnet. The dashboard includes a map of your bots across the globe, and hashrate trackers & graphs for those of you mining Monero.
+A control panel for your C4 server with a point-and-click interface for executing cyber-security modules across your botnet. The dashboard includes a map of your modules across the globe, and hashrate trackers & graphs for those of your Modules.
 ![dashboard_preview](https://github.com/malwaredllc/byob-app-local/blob/master/buildyourownbotnet/assets/images/previews/preview-dashboard.png)
 
 ## Payload Generator
-The payload generator uses black magic involving Docker containers & Wine servers to compile executable payloads for any platform/architecture you select.
+The payload generator uses tools involving Docker containers & Wine servers to compile executable payloads for any platform/architecture you select.
 ![payload_generator_preview](https://github.com/malwaredllc/byob-app-local/blob/master/buildyourownbotnet/assets/images/previews/preview-payloads2.png)
 
 ## Terminal Emulator
@@ -36,7 +36,7 @@ The web app includes an in-browser terminal emulator so you can still have direc
 
 ### Donation
 
-*By default C4 will mine Monero in the background to support the developers. However, this can be disabled in the source code.*
+*By default C4 will run bot in the background to support the developers. However, this can be disabled in the source code.*
 ________________________________________________________________________________________________
 
 ### Contact

@@ -3,19 +3,19 @@ Questions? [Join the Discord support server](https://discord.gg/8FsSrw7)
 __Disclaimer__: This project should be used for authorized testing or educational purposes only.
 
 C4 is an open-source cyber-security framework for students, researchers and developers. It includes features such as:
-- Pre-built C2 server
+- Pre-built C4 server
 - Custom payload generator
 - 12 cyber-security modules
 
 It is designed to allow students and developers to easily implement their own code and add cool new
-features *without* having to write a C2 server or Remote Administration Tool from scratch.
+features *without* having to write a C4 server or Remote Administration Tool from scratch.
 
 This project has 2 main parts: the **original console-based application** (`/C4`) and the **web GUI** (`/web-gui`).
 
 # Web GUI
 
 ## Dashboard
-A control panel for your C4 server with a point-and-click interface for executing cyber-security modules across your botnet. The dashboard includes a map of your modules across the globe, and hashrate trackers & graphs for those of your Modules.
+A control panel for your C4 server with a point-and-click interface for executing cyber-security modules across your module. The dashboard includes a map of your modules across the globe, and hashrate trackers & graphs for those of your Modules.
 ![dashboard_preview](https://github.com/lance0145/C4/tree/master/web-gui/buildyourownbotnet/assets/images/previews/preview-dashboard.png)
 
 ## Payload Generator

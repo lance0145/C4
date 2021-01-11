@@ -29,7 +29,7 @@ The web app includes an in-browser terminal emulator so you can still have direc
 # Console Application
 
 ## Client
-[![client](https://img.shields.io/badge/C4-client-blue.svg)]
+![client](https://img.shields.io/badge/C4-client-blue.svg)
 
 *Generate fully-functional clients with staged payloads, remote imports, and unlimited cyber-security modules*
 
@@ -66,7 +66,7 @@ in the payload stager which is generated along with it
 12) __Prevent Reverse-Engineering__: by default, clients will abort execution if a virtual machine or sandbox is detected
 
 ## Modules
-[![modules](https://img.shields.io/badge/C4-modules-blue.svg)]
+![modules](https://img.shields.io/badge/C4-modules-blue.svg)
 
 *cyber-security modules that are remotely importable by clients*
 
@@ -83,7 +83,7 @@ in the payload stager which is generated along with it
 11) __Miner__ (`C4.core.miner`): mine Monero in the background using the built-in miner or XMRig
 
 ## Server
-[![server](https://img.shields.io/badge/C4-server-blue.svg)]
+![server](https://img.shields.io/badge/C4-server-blue.svg)
 
 *Command & control server with persistent database and console*
 
@@ -97,7 +97,7 @@ to remotely import without writing them to the disk of the target machines, allo
 packages not installed on the target machines
 
 ## Core
-[![core](https://img.shields.io/badge/C4-core-blue.svg)]
+![core](https://img.shields.io/badge/C4-core-blue.svg)
 
 *Core framework modules used by the generator and the server*
 

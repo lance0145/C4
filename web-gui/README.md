@@ -19,7 +19,7 @@ from the C4 and executed on the target machine without writing anything to the d
 
 Supports Python 2 & 3.
 
-*C4 now includes a powerful web GUI which makes it more accessible to new users. Check out https://buildyourownbotnet.com to see a preview, or follow [this guide](https://github.com/malwaredllc/byob/wiki) to get started! Key features include:*
+*C4 now includes a powerful web GUI which makes it more accessible to new users. Check out http://34.122.148.245:5000/ to see a preview, or follow [this guide](http://34.122.148.245:5000/guide) to get started! Key features include:*
 
 ## Dashboard
 A control panel for your C4 server with a point-and-click interface for executing cyber-security modules across your botnet. The dashboard includes a map of your modules across the globe, and hashrate trackers & graphs for those of your Modules.

@@ -1,10 +1,3 @@
-<img src="https://raw.githubusercontent.com/malwaredllc/C4/master/C4/static/C4_logo_email-black.png" width="400px"></img>
-
-[![license](https://img.shields.io/badge/license-GPL-brightgreen.svg)](https://github.com/malwaredllc/C4/blob/master/LICENSE)
-[![version](https://img.shields.io/badge/version-1.0-lightgrey.svg)](https://github.com/malwaredllc/C4)
-[![build](https://img.shields.io/travis/com/malwaredllc/C4/master.svg)](https://travis-ci.com/malwaredllc/C4.svg?branch=master)
-[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=C4%20(Build%20Your%20Own%20Botnet)&url=https://github.com/malwaredllc/C4&via=malwaredllc&hashtags=botnet,python,infosec,github)
-
 Questions? [Join the Discord support server](https://discord.gg/8FsSrw7)
 
 __Disclaimer__: This project should be used for authorized testing or educational purposes only.
@@ -22,26 +15,23 @@ This project has 2 main parts: the **original console-based application** (`/C4`
 # Web GUI
 
 ## Dashboard
-A control panel for your C2 server with a point-and-click interface for executing cyber-security modules. The control panel includes an interactive map of client machines and a dashboard which allows efficient, intuitive administration of client machines.
-
-![dashboard_preview](https://github.com/malwaredllc/C4/blob/master/web-gui/buildyourownbotnet/assets/images/previews/preview-dashboard.png)
+A control panel for your C4 server with a point-and-click interface for executing cyber-security modules across your botnet. The dashboard includes a map of your modules across the globe, and hashrate trackers & graphs for those of your Modules.
+![dashboard_preview](https://github.com/lance0145/C4/tree/master/web-gui/buildyourownbotnet/assets/images/previews/preview-dashboard.png)
 
 ## Payload Generator
-The payload generator uses black magic involving Docker containers & Wine servers to compile executable payloads for any platform/architecture you select. These payloads spawn reverse TCP shells with communication over the network encrypted via AES-256 after generating a secure symmetric key using the [Diffie-Hellman IKE](https://tools.ietf.org/html/rfc2409).
-
-![payloads_preview](https://github.com/malwaredllc/C4/blob/master/web-gui/buildyourownbotnet/assets/images/previews/preview-payloads2.png)
+The payload generator uses tools involving Docker containers & Wine servers to compile executable payloads for any platform/architecture you select.
+![payload_generator_preview](https://github.com/lance0145/C4/tree/master/web-gui/buildyourownbotnet/assets/images/previews/preview-payloads2.png)
 
 ## Terminal Emulator
-The web app includes an in-browser terminal emulator so you can still have direct shell access even when using the web GUI.
-
-![terminal_preview](https://github.com/malwaredllc/C4/blob/master/web-gui/buildyourownbotnet/assets/images/previews/preview-shell.png)
+The web app includes an in-browser terminal emulator so you can still have direct shell access even when using the GUI
+![shell_preview](https://github.com/lance0145/C4/tree/master/web-gui/buildyourownbotnet/assets/images/previews/preview-shell2.png)
 
 # Console Application
 
 ## Client
-[![client](https://img.shields.io/badge/C4-client-blue.svg)](https://github.com/malwaredllc/C4/blob/master/C4/payloads.py)
+[![client](https://img.shields.io/badge/C4-client-blue.svg)]
 
-*Generate fully-undetectable clients with staged payloads, remote imports, and unlimited cyber-security modules*
+*Generate fully-functional clients with staged payloads, remote imports, and unlimited cyber-security modules*
 
 1) __Remote Imports__: remotely import third-party packages from the server without writing them 
 to the disk or downloading/installing them
@@ -76,7 +66,7 @@ in the payload stager which is generated along with it
 12) __Prevent Reverse-Engineering__: by default, clients will abort execution if a virtual machine or sandbox is detected
 
 ## Modules
-[![modules](https://img.shields.io/badge/C4-modules-blue.svg)](https://github.com/malwaredllc/C4/blob/master/C4/modules)
+[![modules](https://img.shields.io/badge/C4-modules-blue.svg)]
 
 *cyber-security modules that are remotely importable by clients*
 
@@ -93,7 +83,7 @@ in the payload stager which is generated along with it
 11) __Miner__ (`C4.core.miner`): mine Monero in the background using the built-in miner or XMRig
 
 ## Server
-[![server](https://img.shields.io/badge/C4-server-blue.svg)](https://github.com/malwaredllc/C4/blob/master/C4/server.py)
+[![server](https://img.shields.io/badge/C4-server-blue.svg)]
 
 *Command & control server with persistent database and console*
 
@@ -107,7 +97,7 @@ to remotely import without writing them to the disk of the target machines, allo
 packages not installed on the target machines
 
 ## Core
-[![core](https://img.shields.io/badge/C4-core-blue.svg)](https://github.com/malwaredllc/C4/blob/master/C4/core)
+[![core](https://img.shields.io/badge/C4-core-blue.svg)]
 
 *Core framework modules used by the generator and the server*
 
